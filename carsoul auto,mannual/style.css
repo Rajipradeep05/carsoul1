@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.silder{
+    height: 500px;
+    width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.slides{
+    width: 500%;
+    height: 500px; 
+    display: flex;
+}
+.slides input{
+    display: none;
+} 
+.silde{
+    width: 20%;
+    transition: 2s;
+}
+.silde img{
+    width: 600px;
+    height: 500px;
+}
+.manual{
+    position: absolute;
+    width: 600px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manuals{
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manuals:not(:last-child){
+    margin-right: 40px;
+
+}
+.manuals:hover{
+    background-color: red;
+}
+#radio1:checked ~ .frist{
+    margin-left: 0;
+}
+#radio2:checked ~ .frist{
+    margin-left: -20%;
+}
+#radio3:checked ~ .frist{
+    margin-left: -40%;
+    
+}
+#radio4:checked ~ .frist{
+    margin-left: -60%;}
+
+.auto{
+    position: absolute;
+    width: 600px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+.auto div {
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+.auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .auto .auto1{
+    background-color: yellow;
+}
+#radio2:checked ~ .auto .auto2{
+    background-color: yellow;
+}
+#radio3:checked ~ .auto .auto3{
+    background-color: yellow;
+}
+#radio4:checked ~ .auto .auto4{
+    background-color: yellow;
+}

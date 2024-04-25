@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carsoul</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="silder">
+        <div class="slides">
+            <input type="radio" id="radio1" name="radios">
+            <input type="radio" id="radio2" name="radios">
+            <input type="radio" id="radio3" name="radios">
+            <input type="radio" id="radio4" name="radios">
+
+            <div class="silde frist">
+                <img src="images/image1.jpg" alt="" srcset="">
+            </div>
+
+            <div class="silde">
+                <img src="images/image2.jpg" alt="" srcset="">
+            </div>
+            <div class="silde">
+                <img src="images/image3.jpg" alt="" srcset="">
+            </div>
+            <div class="silde">
+                <img src="images/image4.jpg" alt="" srcset="">
+            </div>
+
+            <div class="auto">
+                <div class="auto1"></div>
+                <div class="auto2"></div>
+                <div class="auto3"></div>
+                <div class="auto4"></div>
+            </div>
+
+            
+        </div>
+
+        <div class="manual">
+            <label for="radio1" class="manuals"></label>
+            <label for="radio2" class="manuals"></label>
+            <label for="radio3" class="manuals"></label>
+            <label for="radio4" class="manuals"></label>
+        </div>
+    </div>
+
+      <script>
+        var counter = 1;
+        setInterval(function() {
+            document.getElementById('radio'+ counter).checked = true;
+            counter = counter + 1
+            /*counter++;*/
+            if(counter>4){
+                counter = 1
+            }
+        
+            
+        },3000);
+      </script>
+</body>
+</html>
